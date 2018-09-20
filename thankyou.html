@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PyFynder - CEAT</title>
+    <!-- Font Awesome -->
+    <script defer src="{{ url_for('static', filename='fontawesome/js/fontawesome-all.js') }}"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!--multiple select stylesheet-->
+    <link href="{{ url_for('static', filename='bootstrap/css/multiselect.css') }}" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="{{ url_for('static', filename='bootstrap/css/style.css') }}" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+</head>
+
+<body class="grey lighten-3 mt-2 pt-4">
+
+  <!--Main layout-->
+  <main>
+    <div class="container my-4 wow fadeIn">
+
+
+
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                            <div class="panel-body">
+					            <h3 class="page-header">PyFynder - CEAT</h3>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p><h2>Thank you for using PyFynder, {{userEmail}}. An email with the report has been sent to you.</h2></p>
+                        <p><a href="/pypremier/user-input">Click here to run another scan</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+</main>
+  <!--Main layout-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/jquery-3.2.1.min.js') }}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/popper.min.js') }}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/mdb.min.js') }}"></script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/multipleselect.js') }}"></script>
